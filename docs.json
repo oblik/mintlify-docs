@@ -1,35 +1,61 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Blockscout",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#5351db",
+    "light": "#5351db",
+    "dark": "#5351db"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
+  "background": {
+    "colors": {
+      "light": "#fdfffe"
+    },
+    "decoration": "gradient"
+  },
+  "appearance": {
+    "default": "light"
+  },
+  "fonts": {
+    "heading": {
+      "family": "Poppins"
+    },
+    "body": {
+      "family": "Inter"
+    }
+  },
   "navigation": {
     "tabs": [
       {
         "tab": "Guides",
-        "groups": [
+        "pages": [
+          "index",
           {
-            "group": "Get Started",
+            "group": "About BlockScout",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              {
+                "group": "Features",
+                "pages": [
+                  "about/features",
+                  "about/features/ethereum-bytecode-database-microservice",
+                  "about/features/blockscout-2.0"
+                ]
+              },
+              "about/chains",
+              {
+                "group": "News & Media",
+                "pages": [
+                  "about/announcements",
+                  "about/announcements/newsletter-and-blog"
+                ]
+              }
             ]
           },
           {
-            "group": "Essentials",
+            "group": "FAQs",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "faqs/faqs"
             ]
           }
         ]
@@ -38,19 +64,19 @@
         "tab": "API Reference",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Blockscout APIs",
             "pages": [
-              "api-reference/introduction"
+              "devs/apis",
+              "devs/apis/requests-and-limits"
             ]
           },
           {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
+            "group": "Merits Admin service",
+            "openapi": "merits-admin-service.yaml"
+          },
+          {
+            "group": "Merits APIs",
+            "openapi": "openapi.yaml"
           }
         ]
       }
@@ -58,18 +84,18 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Careers",
+          "href": "https://blockscout.bamboohr.com/careers",
+          "icon": "graduation-cap"
         },
         {
           "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "href": "https://discord.gg/blockscout",
+          "icon": "discord"
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://www.blog.blockscout.com/",
           "icon": "newspaper"
         }
       ]
@@ -77,26 +103,27 @@
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "href": "https://www.blockscout.com/"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://github.com/sponsors/blockscout"
       }
     ],
     "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "type": "github",
+      "href": "https://github.com/blockscout/blockscout"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/blockscout/blockscout",
+      "telegram": "https://t.me/blockscoutcommunity",
+      "discord": "https://discord.gg/blockscout",
+      "x": "https://x.com/blockscout"
     }
   }
 }
