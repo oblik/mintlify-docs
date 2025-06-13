@@ -1,0 +1,64 @@
+---
+title: "User FAQs"
+description: "If you have a question that isn't answered here, please contact us in [our Discord](https://discord.gg/blockscout) and the team and community can help troubleshoot your issue."
+---
+
+
+## User FAQs
+
+<AccordionGroup>
+  <Accordion title='What does the "in" or "out" label mean on a transaction?'>
+    This label appears next to a transaction to signify whether a transaction was sent or received by a particular address.
+
+    * **`In:`** A transaction was sent to the address
+
+    * **`Out:`** A transaction was initiated from the address
+
+    <Frame>
+      <img src="https://docs.blockscout.com/~gitbook/image?url=https%3A%2F%2F1077666658-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-Lq1XoWGmy8zggj_u2fM%252Fuploads%252FTYlWWpnlgm7MKWMj8NKp%252Ftx1.png%3Falt%3Dmedia%26token%3D28ef3c48-71f8-40df-9159-294873ff8801&width=300&dpr=4&quality=100&sign=29febeae&sv=2" />
+    </Frame>
+  </Accordion>
+
+  <Accordion title="What are the different transaction types?">
+    **There are 3 transaction types which can be accessed from the tabs menu for an EOA (Externally Owned Address) or Smart Contract.**
+
+    **Transactions:** An EOA, commonly known as a wallet address, initiates a transaction. Both incoming and outgoing transactions are recorded here, and includes any transaction that requires a gas fee (in the native token ETH, xDai etc) for execution.
+
+    **Token Transfers:** Transactions of ERC-20 or ERC-721 tokens. This can include DeFi transactions (like adding or removing liquidity), EOA transfers, airdrops or other transactions where non-native tokens are sent and received.
+
+    **Internal Transactions:** Transactions initiated and executed between smart contracts. Internal transactions are the result of an external transaction (EOA to contract). This initial transaction can then trigger many internal transactions between contracts as functions are called.
+
+    <Frame>
+      <img src="https://docs.blockscout.com/~gitbook/image?url=https%3A%2F%2F1077666658-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-Lq1XoWGmy8zggj_u2fM%252Fuploads%252FlERrTvuCDTryRfK7S6Jz%252Ftokens-tab.png%3Falt%3Dmedia%26token%3D33b7b63c-07af-4b46-a1c7-22561f34c890&width=300&dpr=1&quality=100&sign=ee25af26&sv=2" />
+    </Frame>
+  </Accordion>
+
+  <Accordion title="What is CSV export error 504?">
+    If you request too much data at the same time you may receive a timeout. Decreasing the period of time for an export (**1 week timeframe** is recommended for addresses with lots of transactions) can reduce these errors.
+  </Accordion>
+
+  <Accordion title="How can I access and read/write contract methods?">
+    Yes! The contract should be verified (or the bytecode matches an existing contract) to enable reading and writing to contracts and proxy contracts. [More info here](https://docs.blockscout.com/devs/verification/interacting-with-smart-contracts).
+  </Accordion>
+
+  <Accordion title="How do I verify a smart contract?">
+    There are multiple methods including options from the Blockscout UI as well as an integration directly with Hardhat.
+
+    **Blockscout UI:**
+
+    * [Via flattened source code (Solidity)](https://docs.blockscout.com/devs/verification#via-flattened-source-code)
+
+    * [Via standard JSON input](https://docs.blockscout.com/devs/verification#via-standard-json-input)
+
+    * [Via Sourcify: Sources and metadata JSON file](https://docs.blockscout.com/devs/verification/contracts-verification-via-sourcify)
+
+    * [Vyper contract](https://docs.blockscout.com/devs/verification#vyper-contract)
+
+    **Hardhat:**
+
+    * [Hardhat Verification Plugin](https://docs.blockscout.com/devs/verification/hardhat-verification-plugin)
+
+    * [Sourcify Plugin for Hardhat](https://docs.blockscout.com/devs/verification/hardhat-verification-plugin/sourcify-plugin-for-hardhat)
+  </Accordion>
+</AccordionGroup>
+
