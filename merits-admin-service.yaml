@@ -11,6 +11,14 @@ externalDocs:
   url: https://github.com/blockscout/points
 servers:
 - url: https://merits.blockscout.com/
+- url: https://eth.blockscout.com/
+  description: Ethereum mainnet
+- url: https://optimism.blockscout.com/
+  description: Optimism mainnet
+- url: https://base.blockscout.com/
+  description: Base mainnet
+- url: https://eth-sepolia.blockscout.com/
+  description: Ethereum testnet
 security:
 - AdminApiKey: []
 tags:
